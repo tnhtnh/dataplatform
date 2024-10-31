@@ -10,3 +10,7 @@ output "current_tenant_id" {
 output "current_subscription_id" {
   value = data.azurerm_client_config.current.subscription_id
 }
+
+output "random_string" {
+  value = random_string.random.result
+}
